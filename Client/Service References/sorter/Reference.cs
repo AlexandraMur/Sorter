@@ -23,12 +23,12 @@ namespace Client.sorter {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IWCFSorterChannel : Client.sorter.IWCFSorter, System.ServiceModel.IClientChannel {
+    public interface IWCFSorterChannel : sorter.IWCFSorter, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WCFSorterClient : System.ServiceModel.ClientBase<Client.sorter.IWCFSorter>, Client.sorter.IWCFSorter {
+    public partial class WCFSorterClient : System.ServiceModel.ClientBase<sorter.IWCFSorter>, sorter.IWCFSorter {
         
         public WCFSorterClient() {
         }

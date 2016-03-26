@@ -19,8 +19,27 @@ namespace bubbleSort
     {
         public int[] Sort(int[] array)
         {
-            Console.WriteLine("Bubble Sorter");
-            return null;
+            int temp = 0;
+
+            for (int write = 0; write < array.Length; write++)
+            {
+                for (int sort = 0; sort < array.Length - 1; sort++)
+                {
+                    if (array[sort] > array[sort + 1])
+                    {
+                        temp = array[sort + 1];
+                        array[sort + 1] = array[sort];
+                        array[sort] = temp;
+                    }
+                }
+            }
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write(array[i] + " ");
+            }
+
+            return array;
         }
     }
 }

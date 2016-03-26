@@ -3,38 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Client.sorter;
+using bubbleSort;
 
-namespace Client
+namespace test
 {
-    class Client
+    class Program
     {
         private const int SIZE = 15;
 
         static void Main(string[] args)
         {
-            WCFSorterClient client = new WCFSorterClient();
-
             int[] unsorted_array = new int[SIZE];
 
             Random rng = new Random();
-            for (int i = 0; i < SIZE; i++) 
-            { 
+            for (int i = 0; i < SIZE; i++)
+            {
                 unsorted_array[i] = rng.Next(100);
                 Console.Write(unsorted_array[i]);
                 Console.Write(" ");
             }
 
-            Console.WriteLine();
+            BubbleSorter sorter = new BubbleSorter();
 
-            int[] sorted_array = client.Sort(unsorted_array);
+            int[] sorted_array = sorter.Sort(unsorted_array);
             for (int i = 0; i < SIZE; i++)
             {
-                Console.Write(sorted_array[i]);
-                Console.Write(" ");
+                if (sorted_array != null)
+                {
+                    Console.Write(sorted_array[i]);
+                }
+                else
+                {
+                    Console.WriteLine("NULL");
+                }
             }
-
-            Console.WriteLine();
         }
     }
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sorter;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 
@@ -18,7 +17,7 @@ namespace sorter
 
             try
             { 
-                selfHost.AddServiceEndpoint(typeof(IWCFSorter), new WSHttpBinding(), "WCFSorter");
+                selfHost.AddServiceEndpoint(typeof(IWCFSorter), new WSHttpBinding(), "Sorter");
                 ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
                 smb.HttpGetEnabled = true;
                 selfHost.Description.Behaviors.Add(smb);

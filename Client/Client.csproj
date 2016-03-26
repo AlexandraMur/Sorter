@@ -53,16 +53,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\sorter\Arrays.xsd">
+    <None Include="Service References\sorter\item.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\sorter\service.wsdl" />
-    <None Include="Service References\sorter\service.xsd">
+    <None Include="Service References\sorter\item1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\sorter\service1.xsd">
+    <None Include="Service References\sorter\item2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\sorter\WCFSorter.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sorter\ISorter.csproj">
@@ -75,6 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\sorter\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\sorter\item.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\sorter\configuration91.svcinfo" />

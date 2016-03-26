@@ -19,6 +19,8 @@ namespace bubbleSort
     {
         public int[] Sort(int[] array)
         {
+            Console.WriteLine("Bubble Sort");
+
             int temp = 0;
 
             for (int write = 0; write < array.Length; write++)
@@ -33,12 +35,6 @@ namespace bubbleSort
                     }
                 }
             }
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.Write(array[i] + " ");
-            }
-
             return array;
         }
     }

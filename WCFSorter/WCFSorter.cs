@@ -21,8 +21,9 @@ namespace sorter
         {
             try
             {
+                string[] type_of_sorter = System.IO.File.ReadAllLines(@"Sorter.txt");
                 var kernel = new Ninject.StandardKernel();
-                kernel.Load("BubbleSort.dll");
+                kernel.Load(type_of_sorter[0]);
                 sorter = kernel.Get<ISorter>();
             }
             catch (Exception e)

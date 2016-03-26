@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace iwcfsorter
+namespace sorter
 {
     [ServiceContract]
     public interface IWCFSorter

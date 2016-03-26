@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using iwcfsorter;
+using sorter;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 
-namespace server
+namespace sorter
 {
     class Server
     {
         static void Main(string[] args)
         {
             Uri baseAddress = new Uri("http://localhost:8000/Sorter/");
-            ServiceHost selfHost = new ServiceHost(typeof(IWCFSorter), baseAddress);
+            ServiceHost selfHost = new ServiceHost(typeof(WCFSorter), baseAddress);
 
             try
             { 

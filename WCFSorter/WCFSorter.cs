@@ -5,10 +5,13 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using Ninject;
-using iwcfsorter;
+using Ninject.Modules;
+using Ninject.Extensions.Xml;
+using Ninject.Extensions.Xml.Processors;
 
-namespace wcfsorter
+namespace sorter
 {
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class WCFSorter : IWCFSorter
     {
         public int[] Sort(int[] array)
@@ -16,7 +19,7 @@ namespace wcfsorter
             try
             {
                 var kernel = new Ninject.StandardKernel();
-                kernel.Load("Sort.xml");
+                kernel.Load("BubbleSort.dll");
                 IWCFSorter sorter = kernel.Get<IWCFSorter>();
                 return sorter.Sort(array);
             }

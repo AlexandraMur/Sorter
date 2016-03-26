@@ -10,6 +10,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort", "InsertionSort\InsertionSort.csproj", "{6576C390-3D5A-4E1C-928C-DFABE7E5AE4A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{A11E4ED0-1AA2-4EEC-8283-746872FAD59C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CAB7AA9F-CBC4-494C-A709-86328BDE0213} = {CAB7AA9F-CBC4-494C-A709-86328BDE0213}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSorter", "WCFSorter\WCFSorter.csproj", "{CAB7AA9F-CBC4-494C-A709-86328BDE0213}"
 EndProject
